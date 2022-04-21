@@ -11,6 +11,7 @@ setup(
     description='PyQt QLineEdit with rounded corners',
     url='https://github.com/yjg30737/pyqt-rounded-corners-lineedit.git',
     install_requires=[
-        'PyQt5>=5.8'
+        'PyQt5>=5.8',
+        'python-get-absolute-resource-path @ git+https://git@github.com/yjg30737/python-get-absolute-resource-path.git@main'
     ]
 )
