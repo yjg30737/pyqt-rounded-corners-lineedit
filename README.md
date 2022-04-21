@@ -10,6 +10,11 @@ PyQt QLineEdit with rounded corners
 ## Included Packages
 * <a href="https://github.com/yjg30737/python-get-absolute-resource-path.git">python-get-absolute-resource-path</a> - To get absolute path of resource file
 
+## Detailed Description
+Rounded corners, borderless line edit.
+
+If you want to add the border, add code like this - `lineEdit.setStyleSheet(lineEdit.styleSheet() + 'QLineEdit { border: 1px solid black; }')`
+
 ## Example
 Code Sample
 ```python
@@ -24,6 +29,7 @@ class Widget(QWidget):
 
     def __initUi(self):
         lineEdit = RoundedCornersLineEdit()
+        lineEdit.setStyleSheet(lineEdit.styleSheet() + 'QLineEdit { border: 1px solid black; }') # if you want to set the border
         lay = QGridLayout()
         lay.addWidget(lineEdit)
         self.setLayout(lay)
@@ -41,4 +47,6 @@ if __name__ == "__main__":
 ## Result
 
 ![image](https://user-images.githubusercontent.com/55078043/164461900-e212c0cc-9f62-4451-bd62-880614a7c074.png)
+
+
 
