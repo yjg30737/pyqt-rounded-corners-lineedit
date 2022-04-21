@@ -4,8 +4,7 @@ from PyQt5.QtWidgets import QLineEdit
 class RoundedCornersLineEdit(QLineEdit):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.setStyleSheet(f'QLineEdit '
-                           f'{{ '
-                           f'border-radius: {self.sizeHint().height()/2.5}; '
-                           f'padding: {self.sizeHint().height()/7}; '
-                           f'}}')
+        css_file = open('style/lineedit.css')
+        css_code = css_file.read()
+        css_file.close()
+        self.setStyleSheet(css_code.format(self.sizeHint().height()/2.5, self.sizeHint().height()/7))
