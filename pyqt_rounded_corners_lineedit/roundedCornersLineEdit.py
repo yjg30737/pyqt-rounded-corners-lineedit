@@ -8,4 +8,6 @@ class RoundedCornersLineEdit(QLineEdit):
         css_file = open(get_absolute_resource_path('style/lineedit.css'))
         css_code = css_file.read()
         css_file.close()
-        self.setStyleSheet(css_code.format(self.sizeHint().height()/2.5, self.sizeHint().height()/7))
+        border_radius = self.sizeHint().height()/2.5
+        padding = self.sizeHint().height()/7
+        self.setStyleSheet(css_code.format(border_radius, padding))
