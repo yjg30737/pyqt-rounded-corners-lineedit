@@ -13,7 +13,9 @@ PyQt QLineEdit with rounded corners
 ## Detailed Description
 Rounded corners, borderless line edit.
 
-If you want to add the border, add code like this - `lineEdit.setStyleSheet(lineEdit.styleSheet() + 'QLineEdit { border: 1px solid black; }')`
+If you want to add the border, add code like below.
+
+`lineEdit.setStyleSheet(lineEdit.styleSheet() + 'QLineEdit { border: 1px solid black; }')`
 
 ## Example
 Code Sample
