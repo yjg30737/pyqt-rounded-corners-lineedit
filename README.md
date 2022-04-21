@@ -29,7 +29,8 @@ class Widget(QWidget):
 
     def __initUi(self):
         lineEdit = RoundedCornersLineEdit()
-        lineEdit.setStyleSheet(lineEdit.styleSheet() + 'QLineEdit { border: 1px solid black; }') # if you want to set the border
+        # if you want to set the border
+        # lineEdit.setStyleSheet(lineEdit.styleSheet() + 'QLineEdit { border: 1px solid black; }')
         lay = QGridLayout()
         lay.addWidget(lineEdit)
         self.setLayout(lay)
