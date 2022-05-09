@@ -5,7 +5,7 @@ PyQt QLineEdit with rounded corners
 * PyQt5 >= 5.8
 
 ## Install
-`pip3 install git+https://github.com/yjg30737/pyqt-rounded-corners-lineedit.git --upgrade`
+`python -m pip install pyqt-rounded-corners-lineedit`
 
 ## Included Packages
 * <a href="https://github.com/yjg30737/python-get-absolute-resource-path.git">python-get-absolute-resource-path</a> - To get absolute path of resource file
