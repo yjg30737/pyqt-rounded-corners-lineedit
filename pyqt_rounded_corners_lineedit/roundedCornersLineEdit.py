@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QLineEdit
-from python_get_absolute_resource_path.getAbsoulteResourcePath import get_absolute_resource_path
+import absresgetter
 
 
 class RoundedCornersLineEdit(QLineEdit):
@@ -8,7 +8,7 @@ class RoundedCornersLineEdit(QLineEdit):
         self.__initStyle()
 
     def __initStyle(self):
-        css_file = open(get_absolute_resource_path('style/lineedit.css'))
+        css_file = open(absresgetter.getabsres('style/lineedit.css'))
         css_code = css_file.read()
         css_file.close()
         border_radius = self.sizeHint().height()/2
